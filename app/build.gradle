@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
@@ -24,6 +22,6 @@ dependencies {
     implementation project(':domain')
     implementation project(':ui')
     implementation project(':data')
-    kapt 'com.google.dagger:dagger-compiler:2.16'
-    kapt 'com.google.dagger:dagger-android-processor:2.16'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.16'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.16'
 }
